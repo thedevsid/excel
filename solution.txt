@@ -1,0 +1,32 @@
+Python
+defcalculate_future_value(principal, interest_rate, number_of_years):
+  """
+  Calculates the future value of an investment.
+
+  Args:
+    principal: The initial principal amount.
+    interest_rate: The annual interest rate.
+    number_of_years: The number of years.
+
+  Returns:
+    The future value of the investment.
+  """
+
+  future_value = principal * (1 + interest_rate) ** number_of_years
+  return future_value
+
+if _name_ == "_main_":
+  principal = 10000
+  interest_rate = 0.05
+  number_of_years = 5
+
+  future_value = calculate_future_value(principal, interest_rate, number_of_years)
+  print("The future value is $", future_value)
+Use code with caution. Learn more
+This code calculates the future value of an investment, given the initial principal amount, the annual interest rate, and the number of years. The code first defines a function called calculate_future_value(). This function takes three arguments: 
+the principal amount, the interest rate, and the number of years. 
+
+future_value = principal * (1 + interest_rate) ** number_of_years
+The formula takes into account the fact that the interest earned each year is reinvested in the investment. The function then returns the future value of the investment.
+
+The code then defines a main function. The main function simply calls the calculate_future_value() function with the specified values 
